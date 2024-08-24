@@ -1,0 +1,21 @@
+@BackEndAPI_HostAddress = https://localhost:7083
+
+GET {{BackEndAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{BackEndAPI_HostAddress}}/api/items
+
+###
+
+POST {{BackEndAPI_HostAddress}}/api/items
+Content-Type: application/json
+
+{
+  "Id": 1,
+  "Name": "Pão",
+  "Price": "1.20"
+}
+
+###
